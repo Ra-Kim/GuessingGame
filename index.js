@@ -14,7 +14,9 @@ function guessTheNumber (range) {
     console.log(`Correct, you have ${points} point${points=== 1 ? "" : "s"}`)
   } else {
     correct = false
-    console.log("Wrong, refresh to play again")
+    console.log(`Wrong, your score is ${points?points:0}`)
+    console.log("New Game")
+    guessTheNumber(range = 2)
   }
   
 }
